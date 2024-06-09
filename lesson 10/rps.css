@@ -1,0 +1,21 @@
+.game {
+  background-color: gray;
+  padding: 30px;
+  font-size: 60px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+body {
+  background-color: gray;
+  color: navy;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 25px;
+}
+
+.score {
+  background-color: rgb(191, 23, 23);
+  font-size: 15px;
+  padding: 10px;
+  color: yellow;
+}

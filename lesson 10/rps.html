@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rps.css" />
+  </head>
+  <body>
+    <p>Rock Paper Scissors</p>
+
+    <button class="game" onclick="gameplay('✊');">✊</button>
+
+    <button class="game" onclick="gameplay('🖐️');">🖐️</button>
+
+    <button class="game" onclick="gameplay('✌️');">✌️</button>
+
+    <p class="scores"></p>
+
+    <p class="moves"></p>
+
+    <button
+      class="score"
+      onclick="
+    score.wins = 0;
+    score.loss = 0;
+    score.tie = 0;
+    localStorage.removeItem('score');
+    "
+    >
+      Reset Score
+    </button>
+
+    <script src="rps.js"></script>
+  </body>
+</html>
