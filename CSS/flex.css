@@ -1,0 +1,15 @@
+.container div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo-list</title>
+  </head>
+  <body>
+    <p>Todo list</p>
+    <input class="js-input-button" placeholder="todo name here" />
+    <button onclick="todolist();">Add</button>
+
+    <p class="js-todolist-name"></p>
+
+    <script>
+      const arr = [];
+      function todolist() {
+        const inputelement = document.querySelector(".js-input-button");
+        const name2 = inputelement.value;
+        arr.push(name2);
+
+        console.log(arr);
+
+        inputelement.value = "";
+
+        document.querySelector(".js-todolist-name").innerHTML = arr;
+      }
+    </script>
+  </body>
+</html>

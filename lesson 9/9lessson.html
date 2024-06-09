@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+  </head>
+  <body>
+    <!-- <button>9a</button>
+
+    <button class="js-9b">9b</button> -->
+
+    <button
+      onclick="document.querySelector(
+      '.js-result').innerHTML = 'you choose : heads'"
+      ;
+    >
+      heads
+    </button>
+
+    <button
+      onclick="document.querySelector(
+      '.js-result').innerHTML = 'you choose : tails'"
+      ;
+    >
+      tails
+    </button>
+
+    <p class="js-result"></p>
+
+    <input
+      class="name"
+      onkeydown="console.log(event.key); 
+    if (event.key === 'Enter') {
+        whenclick();
+      }"
+    />
+    <button onclick="whenclick();">submit</button>
+    <p class="js-name"></p>
+    <script>
+      //   console.log(document.querySelector("button"));
+
+      //   let element = (document.querySelector(".js-9b").innerHTML = "9b done.");
+      function whenclick() {
+        let name = document.querySelector(".name");
+
+        document.querySelector(
+          ".js-name"
+        ).innerHTML = `Your name is :${name.value}`;
+      }
+    </script>
+  </body>
+</html>

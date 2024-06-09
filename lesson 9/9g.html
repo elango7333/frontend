@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+  </head>
+  <body>
+    <p>amazom shipping calculator</p>
+    <input class="name" placeholder="cost here" />
+    <button onclick="calculation();">submit</button>
+    <p class="js-cost"></p>
+
+    <input class="js-name" onkeydown="typein(event)" ; />
+
+    <p class="js-onkey"></p>
+
+    <script>
+        function calculation() {
+          let number = document.querySelector(".name");
+
+          let values = Number(number.value) * 100;
+
+          if (values < 4000) {
+            values = values + 1000;
+          }
+
+          document.querySelector(".js-cost").innerHTML = `$${values / 100}`;
+        }
+      function typein(event) {
+        let name = document.querySelector(".js-name");
+        let name_value = name.value;
+        document.querySelector(".js-onkey").innerHTML = name_value;
+      }
+    </script>
+  </body>
+</html>

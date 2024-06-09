@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <p>CALCULATOR</p>
+    <p>
+      <button onclick="calculatorNew('1');">1</button>
+      <button onclick="calculatorNew('2')">2</button>
+      <button onclick="calculatorNew('3')">3</button>
+      <button onclick="calculatorNew(' + ')">+</button>
+    </p>
+    <p>
+      <button onclick="calculatorNew('4')">4</button>
+      <button onclick="calculatorNew('5')">5</button>
+      <button onclick="calculatorNew('6')">6</button>
+      <button onclick="calculatorNew(' - ')">-</button>
+    </p>
+    <p>
+      <button onclick="calculatorNew('7')">7</button>
+      <button onclick="calculatorNew('8')">8</button>
+      <button onclick="calculatorNew('9')">9</button>
+      <button onclick="calculatorNew(' * ')">*</button>
+    </p>
+    <p>
+      <button onclick="calculatorNew('0')">0</button>
+      <button onclick="calculatorNew(' . ')">.</button>
+      <button onclick="calculatorNew(' / ')">/</button>
+      <button
+        onclick="
+        calculation = eval(calculation);
+        console.log(calculation);
+      "
+      >
+        =
+      </button>
+    </p>
+    <p>
+      <button
+        onclick="
+        calculation = '';
+        console.log(calculation);
+      "
+      >
+        Clear
+      </button>
+    </p>
+
+    <script>
+
+      JSON.parse(localStorage.getItem('calculation'));
+
+      let calculation = "";
+
+      function calculatorNew(value) {
+        calculation += value;
+        console.log(calculation);
+      }
+
+      localStorage.setItem("calculation",JSON.stringify(calculation));
+    </script>
+  </body>
+</html>

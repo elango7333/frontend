@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean</title>
+  </head>
+  <body>
+    <p>hello</p>
+    <button
+      onclick="console.log(`Cart quantity:${count}`) 
+      "
+    >
+      Show quantity
+    </button>
+    <button
+      onclick="
+     if (count +1 >= 10) {
+         alert('The cart is full');
+       }
+    ">
+      Add to cart
+    </button>
+    <button onclick="console.log(`Cart Added 2 times:${count = count+2}`)
+    if (count >= 10) {
+         alert('The cart is full');
+       }">
+      +2
+    </button>
+    <button onclick="console.log(`Cart Added 3 times:${count = count+3}`)
+    if (count >= 10) {
+         alert('The cart is full');
+       }">
+      +3
+    </button>
+    <button onclick="console.log(`Cart Added 4 times:${count = count+=4}`)
+    if (count >= 10) {
+         alert('The cart is full');
+       }">
+      +4
+    </button>
+    <button onclick="console.log(`Cart Added 5 times:${count = count+=5}`)
+    if (count >= 10) {
+         alert('The cart is full');
+       }">
+      +5
+    </button>
+    <button onclick="console.log(`Cart removed 2 times:${count = count-2}`)">
+      -2
+    </button>
+    <button onclick="console.log(`Cart removed 3 times:${count = count-3}`)">
+      -3
+    </button>
+    <button onclick="console.log(`Cart removed:${count =count - 1}`)">
+      Remove from Cart
+    </button>
+    <button
+      onclick="console.log(`Cart was reset.\n Cart quantity:${count = 0}`)"
+    >
+      Reset cart
+    </button>
+
+    <script>
+      let count = "";
+      //   let hour = 13;
+      //   let name1 = "Elango!";
+
+      //   if (hour >= 6 && hour <= 12) {
+      //     console.log(`Good morning! ${name1}`);
+      //   } else if (hour >= 13 && hour <= 17) {
+      //     console.log(`Good afternoon! ${name1}`);
+      //   } else {
+      //     console.log(`Good night! ${name1}`);
+      //   }
+
+      //   let age = 78;
+      //   const hoilday = true;
+
+      //   if (age > 0 && age <= 6 && hoilday === true) {
+      //     console.log("Discount");
+      //   } else if (age >= 65 && age <= 100 && hoilday === true) {
+      //     console.log("Discount");
+      //   } else {
+      //     console.log("No discount");
+      //   }
+
+        let randomno = Math.random();
+        console.log(randomno);
+
+        let numb = 0.3;
+        let result = "";
+        let guess = "tails";
+        let result = Math.random();
+
+          if (result >= 1 / 2 && guess === "heads") {
+            console.log("heads");
+          } else {
+            console.log("tails.");
+          }
+
+        guess === "heads" ? "heads" : "tails";
+
+        console.log(guess === "heads" ? "heads" : "tails");
+    </script>
+  </body>
+</html>

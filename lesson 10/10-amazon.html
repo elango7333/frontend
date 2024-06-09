@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+
+    <style>
+      body {
+        font-family: "Arial Narrow Bold";
+      }
+
+      .Subscribe {
+        border: none;
+        background-color: red;
+        color: white;
+        padding: 15px;
+        border-radius: 50px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        cursor: pointer;
+      }
+
+      .subscribed {
+        background-color: maroon;
+        cursor: pointer;
+      }
+
+      .names {
+        font-size: 15px;
+        padding: 10px;
+      }
+
+      .click {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 13px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>YouTube Subscribe Button</p>
+    <button
+      class="Subscribe"
+      onclick="
+    let elemet = document.querySelector('button');
+    if (elemet.innerHTML === 'Subscribe'){
+        elemet.innerHTML = 'Subscribed';
+        elemet.classList.add('subscribed');
+    }else {
+        elemet.innerHTML = 'Subscribe'
+        elemet.classList.remove('subscribed');
+    }"
+    >
+      Subscribe
+    </button> -->
+
+    <p>amazom shipping calculator</p>
+    <input class="name names" placeholder="cost here" />
+    <button class="click" onclick="calculation();">submit</button>
+    <p class="js-cost"></p>
+    <p class="js-return"></p>
+
+    <script>
+      function calculation() {
+        let number = document.querySelector(".name");
+
+        let values = Number(number.value) * 100;
+
+        if (values < 0) {
+          console.log(
+            (document.querySelector(".js-return").innerHTML =
+              "Error. cost cannot be less than $0")
+          );
+
+          return;
+        }
+
+        if (values > 0 && values < 4000) {
+          values = values + 1000;
+        }
+
+        document.querySelector(".js-cost").innerHTML = `$${values / 100}`;
+      }
+    </script>
+  </body>
+</html>

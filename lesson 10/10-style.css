@@ -1,0 +1,41 @@
+.amazon {
+  background-color: rgb(255, 216, 20);
+  padding: 5px 35px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+}
+.requestbtn {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.laterbtn {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.one {
+  background-color: black;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.two {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
